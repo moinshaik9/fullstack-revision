@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    background-color: #a4c4f4;
+}
+
+input {
+    width: 280px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 305px;
+    padding: 12px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #166fe5;
+}
+
+.create-btn {
+    width: 305px;
+    padding: 12px;
+    background-color: #fce3e3;
+    color: rgb(144, 137, 137);
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #070807;
+}
+
+.forgot-link {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}

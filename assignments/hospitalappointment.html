@@ -1,0 +1,138 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Appointment Booking</title>
+</head>
+<body>
+
+<header>
+    <h1>ABC Hospital</h1>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#doctors">Doctors</a> |
+        <a href="#appointment">Appointment</a> |
+        <a href="#contact">Emergency</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="about">
+    <h2>About Hospital</h2>
+    <p>ABC Hospital provides quality healthcare services.</p>
+
+    <h3>Facilities</h3>
+    <ul>
+        <li>24/7 Emergency</li>
+        <li>ICU</li>
+        <li>Ambulance</li>
+    </ul>
+</section>
+
+<section id="doctors">
+    <h2>Doctors Information</h2>
+
+    <table border="1">
+        <tr>
+            <th>Doctor Name</th>
+            <th>Specialization</th>
+            <th>Experience</th>
+            <th>Available Days</th>
+        </tr>
+
+        <tr>
+            <td>Dr. Raj</td>
+            <td>Cardiologist</td>
+            <td>10 Years</td>
+            <td>Mon-Fri</td>
+        </tr>
+
+        <tr>
+            <td>Dr. Kumar</td>
+            <td>Dermatologist</td>
+            <td>8 Years</td>
+            <td>Tue-Sat</td>
+        </tr>
+    </table>
+</section>
+
+<section id="appointment">
+    <h2>Appointment Form</h2>
+
+    <form>
+        Name:
+        <input type="text" required><br><br>
+
+        Email:
+        <input type="email" required><br><br>
+
+        Mobile:
+        <input type="tel" pattern="[0-9]{10}" required><br><br>
+
+        Age:
+        <input type="number" min="1" max="120" required><br><br>
+
+        Gender:
+        <input type="radio" name="g">Male
+        <input type="radio" name="g">Female
+        <br><br>
+
+        Doctor:
+        <select required>
+            <option>Dr. Raj</option>
+            <option>Dr. Kumar</option>
+        </select>
+        <br><br>
+
+        Date:
+        <input type="date" required><br><br>
+
+        Symptoms:
+        <textarea required></textarea><br><br>
+
+        <input type="submit" value="Book Appointment">
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Emergency Contact</h2>
+
+    <p>Ambulance: 108</p>
+    <p>Emergency Helpline: 112</p>
+</section>
+
+<section>
+    <h2>Hospital Introduction Video</h2>
+
+    <video width="300" controls>
+        <source src="hospital.mp4" type="video/mp4">
+    </video>
+
+    <h2>Emergency Audio</h2>
+
+    <audio controls>
+        <source src="emergency.mp3" type="audio/mpeg">
+    </audio>
+</section>
+
+<section>
+    <h2>Hospital Location</h2>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb="
+        width="300"
+        height="200">
+    </iframe>
+</section>
+
+</main>
+
+<footer>
+    <p>© ABC Hospital</p>
+</footer>
+
+</body>
+</html>
+```
