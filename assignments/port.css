@@ -1,0 +1,130 @@
+/* General Styling */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Sections */
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:8px;
+}
+
+h2{
+    color:#2c3e50;
+    margin-bottom:15px;
+}
+
+/* Education Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #333;
+}
+
+th{
+    background:#3498db;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+/* Skills */
+ul{
+    margin-left:30px;
+}
+
+ul li{
+    margin:10px 0;
+    color:#2c3e50;
+}
+
+/* Projects */
+.project{
+    border:2px solid #3498db;
+    background:#ecf5ff;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+}
+
+/* Form Styling */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2980b9;
+}
+
+/* Footer */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}

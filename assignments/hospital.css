@@ -1,0 +1,131 @@
+/* General Styling */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Sections */
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:8px;
+}
+
+h2{
+    color:#0077b6;
+    margin-bottom:15px;
+}
+
+/* Doctors Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid #444;
+}
+
+th{
+    background:#0077b6;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+/* Appointment Form */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:15px;
+    padding:12px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#218838;
+}
+
+/* Emergency Contact */
+.emergency{
+    background:#ffdddd;
+    color:red;
+    font-weight:bold;
+    padding:10px;
+    border-left:5px solid red;
+    margin-bottom:10px;
+}
+
+/* Multimedia Section */
+audio,
+video,
+iframe{
+    margin-top:15px;
+    border-radius:5px;
+}
+
+/* Footer */
+footer{
+    background:#0077b6;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}

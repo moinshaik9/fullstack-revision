@@ -1,138 +1,149 @@
-```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="hospital.css">
 </head>
 <body>
 
-<header>
-    <h1>ABC Hospital</h1>
+    <!-- Header -->
+    <header>
+        <h1>City Care Hospital</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#doctors">Doctors</a> |
-        <a href="#appointment">Appointment</a> |
-        <a href="#contact">Emergency</a>
-    </nav>
-</header>
+    <!-- About Hospital -->
+    <section id="about">
+        <h2>About Hospital</h2>
+        <p>
+            City Care Hospital provides quality healthcare services with
+            experienced doctors, advanced medical equipment, emergency care,
+            pharmacy services, and diagnostic facilities.
+        </p>
+    </section>
 
-<main>
+    <!-- Doctors Table -->
+    <section id="doctors">
+        <h2>Doctors Information</h2>
 
-<section id="about">
-    <h2>About Hospital</h2>
-    <p>ABC Hospital provides quality healthcare services.</p>
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Experience</th>
+                <th>Available Days</th>
+            </tr>
 
-    <h3>Facilities</h3>
-    <ul>
-        <li>24/7 Emergency</li>
-        <li>ICU</li>
-        <li>Ambulance</li>
-    </ul>
-</section>
+            <tr>
+                <td>Dr. Rajesh Kumar</td>
+                <td>Cardiologist</td>
+                <td>10 Years</td>
+                <td>Mon - Fri</td>
+            </tr>
 
-<section id="doctors">
-    <h2>Doctors Information</h2>
+            <tr>
+                <td>Dr. Priya Sharma</td>
+                <td>Dermatologist</td>
+                <td>8 Years</td>
+                <td>Tue - Sat</td>
+            </tr>
 
-    <table border="1">
-        <tr>
-            <th>Doctor Name</th>
-            <th>Specialization</th>
-            <th>Experience</th>
-            <th>Available Days</th>
-        </tr>
+            <tr>
+                <td>Dr. Ahmed Khan</td>
+                <td>Neurologist</td>
+                <td>12 Years</td>
+                <td>Mon - Sat</td>
+            </tr>
+        </table>
+    </section>
 
-        <tr>
-            <td>Dr. Raj</td>
-            <td>Cardiologist</td>
-            <td>10 Years</td>
-            <td>Mon-Fri</td>
-        </tr>
+    <!-- Appointment Form -->
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
 
-        <tr>
-            <td>Dr. Kumar</td>
-            <td>Dermatologist</td>
-            <td>8 Years</td>
-            <td>Tue-Sat</td>
-        </tr>
-    </table>
-</section>
+        <form>
+            <label>Patient Name</label>
+            <input type="text" required>
 
-<section id="appointment">
-    <h2>Appointment Form</h2>
+            <label>Email</label>
+            <input type="email" required>
 
-    <form>
-        Name:
-        <input type="text" required><br><br>
+            <label>Mobile Number</label>
+            <input type="tel" required>
 
-        Email:
-        <input type="email" required><br><br>
+            <label>Age</label>
+            <input type="number" required>
 
-        Mobile:
-        <input type="tel" pattern="[0-9]{10}" required><br><br>
+            <label>Gender</label>
+            <select required>
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
 
-        Age:
-        <input type="number" min="1" max="120" required><br><br>
+            <label>Select Doctor</label>
+            <select required>
+                <option>Dr. Rajesh Kumar</option>
+                <option>Dr. Priya Sharma</option>
+                <option>Dr. Ahmed Khan</option>
+            </select>
 
-        Gender:
-        <input type="radio" name="g">Male
-        <input type="radio" name="g">Female
+            <label>Appointment Date</label>
+            <input type="date" required>
+
+            <label>Symptoms</label>
+            <textarea rows="4"></textarea>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Emergency Contact</h2>
+        <p class="emergency">
+            🚑 Ambulance: +91 9876543210
+        </p>
+        <p>
+            📧 Email: hospital@gmail.com
+        </p>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section id="media">
+        <h2>Hospital Multimedia</h2>
+
+        <audio controls>
+            <source src="hospital.mp3" type="audio/mpeg">
+        </audio>
+
         <br><br>
 
-        Doctor:
-        <select required>
-            <option>Dr. Raj</option>
-            <option>Dr. Kumar</option>
-        </select>
+        <video width="400" controls>
+            <source src="hospital.mp4" type="video/mp4">
+        </video>
+
         <br><br>
 
-        Date:
-        <input type="date" required><br><br>
+        <iframe
+            width="400"
+            height="250"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+    </section>
 
-        Symptoms:
-        <textarea required></textarea><br><br>
-
-        <input type="submit" value="Book Appointment">
-    </form>
-</section>
-
-<section id="contact">
-    <h2>Emergency Contact</h2>
-
-    <p>Ambulance: 108</p>
-    <p>Emergency Helpline: 112</p>
-</section>
-
-<section>
-    <h2>Hospital Introduction Video</h2>
-
-    <video width="300" controls>
-        <source src="hospital.mp4" type="video/mp4">
-    </video>
-
-    <h2>Emergency Audio</h2>
-
-    <audio controls>
-        <source src="emergency.mp3" type="audio/mpeg">
-    </audio>
-</section>
-
-<section>
-    <h2>Hospital Location</h2>
-
-    <iframe
-        src="https://www.google.com/maps/embed?pb="
-        width="300"
-        height="200">
-    </iframe>
-</section>
-
-</main>
-
-<footer>
-    <p>© ABC Hospital</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 City Care Hospital. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
-```
