@@ -1,149 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Appointment Booking</title>
-    <link rel="stylesheet" href="hospital.css">
-</head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>City Care Hospital</h1>
+<header class="hero">
+    <div class="overlay">
+        <h1>🏥 City Care Hospital</h1>
+        <p>Trusted Healthcare | Advanced Technology | 24/7 Emergency Care</p>
+
         <nav>
             <a href="#about">About</a>
             <a href="#doctors">Doctors</a>
             <a href="#appointment">Appointment</a>
             <a href="#contact">Contact</a>
+            <a href="#media">Media</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <!-- About Hospital -->
-    <section id="about">
-        <h2>About Hospital</h2>
-        <p>
-            City Care Hospital provides quality healthcare services with
-            experienced doctors, advanced medical equipment, emergency care,
-            pharmacy services, and diagnostic facilities.
-        </p>
-    </section>
+<main>
 
-    <!-- Doctors Table -->
-    <section id="doctors">
-        <h2>Doctors Information</h2>
+<section id="about">
+    <h2>About Our Hospital</h2>
 
-        <table>
-            <tr>
-                <th>Doctor Name</th>
-                <th>Specialization</th>
-                <th>Experience</th>
-                <th>Available Days</th>
-            </tr>
+    <p>
+        City Care Hospital is dedicated to providing world-class healthcare
+        services with modern medical facilities and highly experienced doctors.
+    </p>
 
-            <tr>
-                <td>Dr. Rajesh Kumar</td>
-                <td>Cardiologist</td>
-                <td>10 Years</td>
-                <td>Mon - Fri</td>
-            </tr>
+    <h3>Facilities</h3>
+    <ul>
+        <li>24/7 Emergency Services</li>
+        <li>Advanced Diagnostic Center</li>
+        <li>Pharmacy & Laboratory</li>
+        <li>ICU & Critical Care Units</li>
+        <li>Cashless Insurance Support</li>
+    </ul>
+</section>
 
-            <tr>
-                <td>Dr. Priya Sharma</td>
-                <td>Dermatologist</td>
-                <td>8 Years</td>
-                <td>Tue - Sat</td>
-            </tr>
+<section id="doctors">
+    <h2>Our Specialists</h2>
 
-            <tr>
-                <td>Dr. Ahmed Khan</td>
-                <td>Neurologist</td>
-                <td>12 Years</td>
-                <td>Mon - Sat</td>
-            </tr>
-        </table>
-    </section>
+    <table>
+        <tr>
+            <th>Doctor</th>
+            <th>Specialization</th>
+            <th>Experience</th>
+            <th>Available Days</th>
+        </tr>
 
-    <!-- Appointment Form -->
-    <section id="appointment">
-        <h2>Book an Appointment</h2>
+        <tr>
+            <td>Dr. Moinuddin Ahmed Shaik</td>
+            <td>Cardiologist</td>
+            <td>10 Years</td>
+            <td>Mon-Fri</td>
+        </tr>
 
-        <form>
-            <label>Patient Name</label>
-            <input type="text" required>
+        <tr>
+            <td>Dr. Narendra Damodhar Das</td>
+            <td>Dermatologist</td>
+            <td>8 Years</td>
+            <td>Tue-Sat</td>
+        </tr>
 
-            <label>Email</label>
-            <input type="email" required>
+        <tr>
+            <td>Dr. Bhavadeep Reddy</td>
+            <td>Neurologist</td>
+            <td>12 Years</td>
+            <td>Mon-Sat</td>
+        </tr>
+    </table>
+</section>
 
-            <label>Mobile Number</label>
-            <input type="tel" required>
+<section id="appointment">
+    <h2>Book Appointment</h2>
 
-            <label>Age</label>
-            <input type="number" required>
+    <form>
 
-            <label>Gender</label>
-            <select required>
-                <option>Select Gender</option>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-            </select>
+        <label>Patient Name</label>
+        <input type="text" required>
 
-            <label>Select Doctor</label>
-            <select required>
-                <option>Dr. Rajesh Kumar</option>
-                <option>Dr. Priya Sharma</option>
-                <option>Dr. Ahmed Khan</option>
-            </select>
+        <label>Email</label>
+        <input type="email" required>
 
-            <label>Appointment Date</label>
-            <input type="date" required>
+        <label>Mobile Number</label>
+        <input type="tel" pattern="[0-9]{10}" required>
 
-            <label>Symptoms</label>
-            <textarea rows="4"></textarea>
+        <label>Age</label>
+        <input type="number" min="1" max="120" required>
 
-            <button type="submit">Book Appointment</button>
-        </form>
-    </section>
+        <label>Gender</label>
+        <select required>
+            <option value="">Choose Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Emergency Contact</h2>
-        <p class="emergency">
-            🚑 Ambulance: +91 9876543210
-        </p>
-        <p>
-            📧 Email: hospital@gmail.com
-        </p>
-    </section>
+        <label>Select Doctor</label>
+        <select required>
+            <option>Cardiologist</option>
+            <option>Dermatologist</option>
+            <option>Neurologist</option>
+        </select>
 
-    <!-- Multimedia Section -->
-    <section id="media">
-        <h2>Hospital Multimedia</h2>
+        <label>Appointment Date</label>
+        <input type="date" required>
 
-        <audio controls>
-            <source src="hospital.mp3" type="audio/mpeg">
-        </audio>
+        <label>Symptoms</label>
+        <textarea rows="5"></textarea>
 
-        <br><br>
+        <button type="submit">
+            Book Appointment
+        </button>
 
-        <video width="400" controls>
-            <source src="hospital.mp4" type="video/mp4">
-        </video>
+    </form>
+</section>
 
-        <br><br>
+<section id="contact" class="emergency-box">
+    <h2>Emergency Contact</h2>
 
-        <iframe
-            width="400"
-            height="250"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-    </section>
+    <p>🚑 Ambulance : +91 9876543210</p>
+    <p>☎ Reception : +91 9876543211</p>
+    <p>📧 Email : hospital@gmail.com</p>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 City Care Hospital. All Rights Reserved.</p>
-    </footer>
+<section id="media">
+    <h2>Hospital Multimedia</h2>
+
+    <audio controls>
+        <source src="hospital.mp3" type="audio/mpeg">
+    </audio>
+
+    <video controls width="600">
+        <source src="hospital.mp4" type="video/mp4">
+    </video>
+
+    <iframe
+        width="600"
+        height="350"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        allowfullscreen>
+    </iframe>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 City Care Hospital | All Rights Reserved</p>
+</footer>
 
 </body>
-</html>
